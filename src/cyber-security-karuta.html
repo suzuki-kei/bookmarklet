@@ -1,0 +1,14 @@
+<!--
+  -
+  - IPA の「サイバーセキュリティ対策かるた」からランダムに 1 枚表示する.
+  -
+  -     * サイバーセキュリティ対策かるた
+  -       https://www.ipa.go.jp/security/otasuketai-pr/list/
+  -
+  -->
+
+<script>
+keys = "a i u e o ka ki ku ke ko sa shi su se so ta chi tsu te to na ni nu ne no ha hi fu he ho ma mi mu me mo ya yu yo ra ri ru re ro wa wo n".split(" ")
+name = keys.sort(_ => Math.random() - 0.5)[0] + ".png"
+location.href = "https://www.ipa.go.jp/security/otasuketai-pr/assets/img/karuta/" + name
+</script>
