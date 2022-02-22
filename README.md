@@ -34,6 +34,10 @@ data スキームで HTML を記述すれば, 新しいタブでも動作しま�
 
     data:text/html, <script>window.location.href="https://example.com"</script>
 
+## テストを実行する
+
+    npm run test
+
 ## ブックマークレットの生成
 
 以下を実行すると, ./bookmarklet/ 以下にファイルが生成されます.
@@ -50,4 +54,5 @@ data スキームで HTML を記述すれば, 新しいタブでも動作しま�
     npm install gulp-replace
     npm install gulp-terser
     npm install gulp-html-minifier-terser
+    npm install mocha
 
