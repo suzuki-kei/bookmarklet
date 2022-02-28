@@ -13,7 +13,7 @@
 ## ブックマークレット開発
 
 ソースファイルは ./src/ 以下に作成します.
-拡張子はブックマークレットをどのスキームで実行するかによって使い分けます。
+拡張子はブックマークレットをどのスキームで実行するかによって使い分けます.
 
     * data スキームで実行する場合は .html とする.
       Ex) data:text/html, <script>window.location.href="https://example.com"</script>
