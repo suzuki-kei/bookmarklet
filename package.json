@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "gulp": "$(npm bin)/gulp",
+    "build": "$(npm bin)/gulp build",
     "test": "$(npm bin)/mocha --recursive"
   },
   "author": "SUZUKI Kei",

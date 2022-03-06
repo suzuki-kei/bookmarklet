@@ -42,7 +42,8 @@ data スキームで HTML を記述すれば, 新しいタブでも動作しま�
 
 以下を実行すると, ./bookmarklets/ 以下にファイルが生成されます.
 
-    npm run gulp build
+    # alias for `npm run gulp build`.
+    npm run build
 
 生成されたファイルの内容をブックマークとして登録すれば, ブックマークレットとして利用できます.
 
