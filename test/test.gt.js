@@ -9,6 +9,7 @@ describe("gt", () => {
 
     beforeEach(() => {
         global.window = {location: {href: null}}
+        global.location = global.window.location
     })
 
     const tests = [
