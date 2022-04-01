@@ -7,6 +7,8 @@
 (function(){
     var url = location.href
     var url = url.replace(/^(https:\/\/docs\.google\.com\/[^/]+\/d\/[^/]+).*$/, "$1/copy")
-    window.open(url, "_blank")
+    if (url !== location.href) {
+        window.open(url, "_blank")
+    }
 })()
 
