@@ -14,32 +14,32 @@ describe("drive.copy", () => {
 
     const tests = [
         {
-            url: "https://docs.google.com/document/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/edit",
-            expected: "https://docs.google.com/document/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/copy",
+            url: "https://docs.google.com/document/d/XXXXXXXXXX-xxxxxxxxxxxxxxxxx-000000000000000/edit",
+            expected: "https://docs.google.com/document/d/XXXXXXXXXX-xxxxxxxxxxxxxxxxx-000000000000000/copy",
         },
         {
-            url: "https://docs.google.com/document/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/edit#heading=h.xxxxxxxxxxxx",
-            expected: "https://docs.google.com/document/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/copy",
+            url: "https://docs.google.com/document/d/XXXXXXXXXX-xxxxxxxxxxxxxxxxx-000000000000000/edit#heading=h.xxxxxxxxxxxx",
+            expected: "https://docs.google.com/document/d/XXXXXXXXXX-xxxxxxxxxxxxxxxxx-000000000000000/copy",
         },
         {
-            url: "https://docs.google.com/document/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/edit#heading=h.xxxxxxxxxxxx",
-            expected: "https://docs.google.com/document/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/copy",
+            url: "https://docs.google.com/document/d/XXXXXXXXXX-xxxxxxxxxxxxxxxxx-000000000000000/edit#heading=h.xxxxxxxxxxxx",
+            expected: "https://docs.google.com/document/d/XXXXXXXXXX-xxxxxxxxxxxxxxxxx-000000000000000/copy",
         },
         {
-            url: "https://docs.google.com/spreadsheets/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/edit",
-            expected: "https://docs.google.com/spreadsheets/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/copy",
+            url: "https://docs.google.com/spreadsheets/d/XXXXXXXXXX-xxxxxxxxxxxxxxxxx-000000000000000/edit",
+            expected: "https://docs.google.com/spreadsheets/d/XXXXXXXXXX-xxxxxxxxxxxxxxxxx-000000000000000/copy",
         },
         {
-            url: "https://docs.google.com/spreadsheets/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/edit#gid=xxxxxxxxxx",
-            expected: "https://docs.google.com/spreadsheets/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/copy",
+            url: "https://docs.google.com/spreadsheets/d/XXXXXXXXXX-xxxxxxxxxxxxxxxxx-000000000000000/edit#gid=xxxxxxxxxx",
+            expected: "https://docs.google.com/spreadsheets/d/XXXXXXXXXX-xxxxxxxxxxxxxxxxx-000000000000000/copy",
         },
         {
-            url: "https://docs.google.com/presentation/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/edit",
-            expected: "https://docs.google.com/presentation/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/copy",
+            url: "https://docs.google.com/presentation/d/XXXXXXXXXX-xxxxxxxxxxxxxxxxx-000000000000000/edit",
+            expected: "https://docs.google.com/presentation/d/XXXXXXXXXX-xxxxxxxxxxxxxxxxx-000000000000000/copy",
         },
         {
-            url: "https://docs.google.com/presentation/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/edit#slide=id.xxxxxxxxxxxxxxxxxx",
-            expected: "https://docs.google.com/presentation/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/copy",
+            url: "https://docs.google.com/presentation/d/XXXXXXXXXX-xxxxxxxxxxxxxxxxx-000000000000000/edit#slide=id.xxxxxxxxxxxxxxxxxx",
+            expected: "https://docs.google.com/presentation/d/XXXXXXXXXX-xxxxxxxxxxxxxxxxx-000000000000000/copy",
         },
     ]
 
