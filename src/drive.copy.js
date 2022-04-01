@@ -5,8 +5,8 @@
  */
 
 (function(){
-    var url = location.href;
-    var url = url.replace(/^(https:\/\/docs\.google\.com\/[^/]+\/d\/[^/]+).*$/, "$1/copy");
-    window.open(url, "_blank");
+    var url = location.href
+    var url = url.replace(/^(https:\/\/docs\.google\.com\/[^/]+\/d\/[^/]+).*$/, "$1/copy")
+    window.open(url, "_blank")
 })()
 
