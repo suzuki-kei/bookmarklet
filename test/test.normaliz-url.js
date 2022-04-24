@@ -34,6 +34,10 @@ describe("normalize-url", () => {
             expected: "https://www.amazon.co.jp/dp/B07FQ4DJ7X",
         },
         {
+            url: "https://www.amazon.co.jp/XXXXX/product-reviews/B09FJQZ7Q3?reviewerType=xxx",
+            expected: "https://www.amazon.co.jp/product-reviews/B09FJQZ7Q3",
+        },
+        {
             url: "https://twitter.com/suzuki6b6569/status/1480061968547725316?s=21",
             expected: "https://twitter.com/suzuki6b6569/status/1480061968547725316",
         },
