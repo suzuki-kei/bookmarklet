@@ -26,7 +26,7 @@
 
 (function(){
     url = location.href
-    url = url.replace(/^(https:\/\/www\.amazon\.co\.jp)\/.*dp\/([0-9a-zA-Z]+).*$/, "$1/dp/$2")
+    url = url.replace(/^(https:\/\/www\.amazon\.co\.jp)\/(?:.*\/)dp\/([0-9a-zA-Z]+).*$/, "$1/dp/$2")
     url = url.replace(/^(https:\/\/www\.amazon\.co\.jp)\/o\/ASIN\/([0-9a-zA-Z]+).*$/, "$1/dp/$2")
     url = url.replace(/^(https:\/\/www\.amazon\.co\.jp)\/gp\/product\/([0-9a-zA-Z]+).*$/, "$1/dp/$2")
     url = url.replace(/^(https:\/\/www\.amazon\.co\.jp)\/exec\/obidos\/ASIN\/([0-9a-zA-Z]+).*$/, "$1/dp/$2")
