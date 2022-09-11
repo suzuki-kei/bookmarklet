@@ -22,6 +22,10 @@ describe("normalize-url", () => {
             expected: "https://www.amazon.co.jp/dp/B07FQ4DJ7X",
         },
         {
+            url: "https://www.amazon.co.jp/dp/4814400098/ref=xx_xx_x_xx_xx_xxxxxxxxxxxxxxxxxxxx",
+            expected: "https://www.amazon.co.jp/dp/4814400098",
+        },
+        {
             url: "https://www.amazon.co.jp/gp/product/B07FQ4DJ7X?tag=xxx&ref=xxx",
             expected: "https://www.amazon.co.jp/dp/B07FQ4DJ7X",
         },
