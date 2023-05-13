@@ -8,7 +8,7 @@
 
 初回のみ以下を実行します.
 
-    npm install
+    make install
 
 ## ブックマークレット開発
 
@@ -36,13 +36,13 @@ data スキームで HTML を記述すれば, 新しいタブでも動作しま�
 
 ## テストを実行する
 
-    npx mocha --recursive test
+    make test
 
 ## ブックマークレットの生成
 
 以下を実行すると, ./bookmarklets/ 以下にファイルが生成されます.
 
-    npx gulp build
+    make build
 
 生成されたファイルの内容をブックマークとして登録すれば, ブックマークレットとして利用できます.
 
