@@ -36,14 +36,13 @@ data スキームで HTML を記述すれば, 新しいタブでも動作しま�
 
 ## テストを実行する
 
-    npm run test
+    npx mocha --recursive test
 
 ## ブックマークレットの生成
 
 以下を実行すると, ./bookmarklets/ 以下にファイルが生成されます.
 
-    # alias for `npm run gulp build`.
-    npm run build
+    npx gulp build
 
 生成されたファイルの内容をブックマークとして登録すれば, ブックマークレットとして利用できます.
 

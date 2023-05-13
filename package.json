@@ -3,11 +3,6 @@
   "version": "0.0.0",
   "description": "bookmarklet",
   "main": "index.js",
-  "scripts": {
-    "gulp": "$(npm bin)/gulp",
-    "build": "$(npm bin)/gulp build",
-    "test": "$(npm bin)/mocha --recursive"
-  },
   "author": "SUZUKI Kei",
   "license": "MIT",
   "dependencies": {
