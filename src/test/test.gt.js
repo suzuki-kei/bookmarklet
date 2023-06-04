@@ -2,7 +2,7 @@ const assert = require("assert")
 const fs = require("fs")
 
 function gt() {
-    eval(fs.readFileSync("./src/gt.js", "utf-8"))
+    eval(fs.readFileSync("./src/main/gt.js", "utf-8"))
 }
 
 describe("gt", () => {

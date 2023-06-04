@@ -2,7 +2,7 @@ const assert = require("assert")
 const fs = require("fs")
 
 function cyber_security_karuta() {
-    html = fs.readFileSync("./src/cyber-security-karuta.html", "utf-8")
+    html = fs.readFileSync("./src/main/cyber-security-karuta.html", "utf-8")
     javascript = html.replace(/^(?:.|\n)*<script[^>]*>\n*([^<]*?)\n*<\/script>(?:.|\n)*$/gi, "$1")
     eval(javascript)
 }

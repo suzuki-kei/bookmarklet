@@ -5,7 +5,7 @@ const replace = require("gulp-replace")
 const terser = require("gulp-terser")
 const terser_html = require("gulp-html-minifier-terser")
 
-const SOURCE_DIR = "src"
+const SOURCE_DIR = "src/main"
 const DESTINATION_DIR = "bookmarklets"
 
 const MINIFY_JS_OPTIONS = {

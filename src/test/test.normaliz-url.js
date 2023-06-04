@@ -2,7 +2,7 @@ const assert = require("assert")
 const fs = require("fs")
 
 function normalize_url() {
-    eval(fs.readFileSync("./src/normalize-url.js", "utf-8"))
+    eval(fs.readFileSync("./src/main/normalize-url.js", "utf-8"))
 }
 
 describe("normalize-url", () => {

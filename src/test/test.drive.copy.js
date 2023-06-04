@@ -2,7 +2,7 @@ const assert = require("assert")
 const fs = require("fs")
 
 function drive_copy() {
-    eval(fs.readFileSync("./src/drive.copy.js", "utf-8"))
+    eval(fs.readFileSync("./src/main/drive.copy.js", "utf-8"))
 }
 
 describe("drive.copy", () => {
