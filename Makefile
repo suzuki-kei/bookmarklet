@@ -1,19 +1,25 @@
 
+.DEFAULT_GOAL := help
+
+.PHONY: help
+help: # 各ルールの説明を表示する
+	@make.usage $(MAKEFILE_LIST)
+
 .PHONY: install
-install:
+install: # npm の依存パッケージをインストールする
 	@npm install
 
 .PHONY: reinstall
-reinstall:
+reinstall: # npm の依存パッケージを再インストールする
 	@rm -rf node_modules/
 	@rm -rf package-lock.json
 	@npm install
 
 .PHONY: test
-test:
+test: # テストを実行する
 	@npx mocha --recursive src/test
 
 .PHONY: build
-build:
+build: # 成果物を作る
 	@npx gulp -f src/gulpfile/gulpfile.js build
 
