@@ -6,11 +6,17 @@ help: # 各ルールの説明を表示する
 	@make.usage $(MAKEFILE_LIST)
 
 .PHONY: install
-install: # npm の依存パッケージをインストールする
+install: npm.install # alias for npm.install
+
+.PHONY: npm.install
+npm.install: # npm の依存パッケージをインストールする
 	@npm install
 
 .PHONY: reinstall
-reinstall: # npm の依存パッケージを再インストールする
+reinstall: npm.reinstall # alias for npm.reinstall
+
+.PHONY: npm.reinstall
+npm.reinstall: # npm の依存パッケージを再インストールする
 	@bash src/scripts/npm.reinstall.sh
 
 .PHONY: test
