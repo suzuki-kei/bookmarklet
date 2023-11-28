@@ -11,9 +11,7 @@ install: # npm の依存パッケージをインストールする
 
 .PHONY: reinstall
 reinstall: # npm の依存パッケージを再インストールする
-	@rm -rf node_modules/
-	@rm -rf package-lock.json
-	@npm install
+	@bash src/scripts/npm.reinstall.sh
 
 .PHONY: test
 test: # テストを実行する
