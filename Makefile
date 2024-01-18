@@ -25,5 +25,5 @@ test: # テストを実行する
 
 .PHONY: build
 build: # 成果物を作る
-	@npx gulp -f src/gulpfile/gulpfile.js build
+	@npx gulp -f src/gulpfile/gulpfile.js --cwd=. build
 
