@@ -1,0 +1,1 @@
+javascript:text="視聴履歴からエピソードを削除する",elements=Array.from(document.querySelectorAll("button")).filter((e=>e.innerText==text)),elements.forEach((e=>e.click()));
