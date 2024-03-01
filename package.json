@@ -11,6 +11,6 @@
     "gulp-rename": "^2.0.0",
     "gulp-replace": "^1.1.4",
     "gulp-terser": "^2.1.0",
-    "mocha": "^10.2.0"
+    "mocha": "^10.3.0"
   }
 }
