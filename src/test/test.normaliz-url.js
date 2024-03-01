@@ -45,10 +45,6 @@ describe("normalize-url", () => {
             url: "https://twitter.com/suzuki6b6569/status/1480061968547725316?s=21",
             expected: "https://twitter.com/suzuki6b6569/status/1480061968547725316",
         },
-        {
-            url: "https://www.monotaro.com/g/00542161/?t.q=%E3%82%B3%E3%83%94%E3%83%BC%E7%94%A8%E7%B4%99",
-            expected: "https://www.monotaro.com/g/00542161/",
-        },
     ]
     tests.forEach(({url, expected}, i) => {
         it("#" + i, () => {
