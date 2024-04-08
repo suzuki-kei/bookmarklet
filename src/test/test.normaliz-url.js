@@ -45,6 +45,10 @@ describe("normalize-url", () => {
             url: "https://twitter.com/suzuki6b6569/status/1480061968547725316?s=21",
             expected: "https://twitter.com/suzuki6b6569/status/1480061968547725316",
         },
+        {
+            url: "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/X000X0X0.pdf?sv=0000-00-00&st=0000-00-00X00%3A35%3A10Z&se=0000-00-00T00%3A00%3A00Z&sr=x&sp=xx&sig=00xxXxxXXXxx0XX0xxxxxXXXxXXXXXx0XxXXXX0XX0X%3D",
+            expected: "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/X000X0X0.pdf",
+        },
     ]
     tests.forEach(({url, expected}, i) => {
         it("#" + i, () => {

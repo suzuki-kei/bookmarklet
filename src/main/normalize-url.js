@@ -25,6 +25,9 @@
  *     https://twitter.com/suzuki6b6569/status/1480061968547725316?s=21
  *     -> https://twitter.com/suzuki6b6569/status/1480061968547725316
  *
+ *     https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/X000X0X0.pdf?sv=0000-00-00&st=0000-00-00X00%3A35%3A10Z&se=0000-00-00T00%3A00%3A00Z&sr=x&sp=xx&sig=00xxXxxXXXxx0XX0xxxxxXXXxXXXXXx0XxXXXX0XX0X%3D
+ *     -> https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/X000X0X0.pdf
+ *
  */
 
 (function(){
@@ -36,6 +39,7 @@
     url = url.replace(/^(https:\/\/www\.amazon\.co\.jp)\/(?:.*\/)product-reviews\/([0-9a-zA-Z]+).*$/, "$1/product-reviews/$2")
     url = url.replace(/^(https:\/\/twitter\.com\/[-_0-9a-zA-Z]+\/status\/[0-9]+).*$/, "$1")
     url = url.replace(/^(https:\/\/qiita\.com\/[-_0-9a-zA-Z]+\/items\/[0-9a-zA-Z]+).*$/, "$1")
+    url = url.replace(/^(https:\/\/disclosure2dl\.edinet-fsa\.go\.jp\/searchdocument\/pdf\/[0-9a-zA-Z]+\.pdf).*$/, "$1")
     location.href = url;
 })()
 
