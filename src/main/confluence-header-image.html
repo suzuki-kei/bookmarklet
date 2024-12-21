@@ -1,0 +1,42 @@
+<!--
+  -
+  - Confluence ページのヘッダ画像として現在日にあったものを表示する.
+  -
+  -->
+
+<script>
+(function() {
+    const today = new Date();
+    const month = String(today.getMonth() + 1).padStart(2, "0");
+    const date  = String(today.getDate()).padStart(2, "0");
+    const monthKey = "YYYY-" + month;
+    const dateKey  = "YYYY-" + month + "-" + date;
+
+    const map = {
+        "YYYY-01"    : "https://www.irasutoya.com/2014/08/112.html",
+        "YYYY-02"    : "https://www.irasutoya.com/2014/08/112.html",
+        // バレンタインデー
+        "YYYY-02-14" : "https://www.irasutoya.com/2015/01/blog-post_870.html",
+        "YYYY-03"    : "https://www.irasutoya.com/2014/08/112.html",
+        // ホワイトデー
+        "YYYY-03-14" : "https://www.irasutoya.com/2015/01/blog-post_764.html",
+        "YYYY-04"    : "https://www.irasutoya.com/2014/08/112.html",
+        "YYYY-05"    : "https://www.irasutoya.com/2014/08/112.html",
+        "YYYY-06"    : "https://www.irasutoya.com/2014/08/112.html",
+        "YYYY-07"    : "https://www.irasutoya.com/2014/08/112.html",
+        // 七夕
+        "YYYY-07-07" : "https://www.irasutoya.com/2014/06/blog-post_5365.html",
+        "YYYY-08"    : "https://www.irasutoya.com/2014/08/112.html",
+        "YYYY-09"    : "https://www.irasutoya.com/2014/08/112.html",
+        "YYYY-10"    : "https://www.irasutoya.com/2014/08/112.html",
+        // ハロウィン
+        "YYYY-10-31" : "https://www.irasutoya.com/2014/10/blog-post_9.html",
+        "YYYY-11"    : "https://www.irasutoya.com/2014/08/112.html",
+        "YYYY-12"    : "https://www.irasutoya.com/2014/08/112.html",
+        // クリスマス
+        "YYYY-12-25" : "https://www.irasutoya.com/2013/12/blog-post_5390.html",
+    };
+    location.href = map[dateKey] || map[monthKey];
+})()
+</script>
+
