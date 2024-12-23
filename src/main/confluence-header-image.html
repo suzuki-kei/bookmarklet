@@ -6,12 +6,13 @@
 
 <script>
 (function() {
-    const today = new Date();
-    const month = String(today.getMonth() + 1).padStart(2, "0");
-    const date  = String(today.getDate()).padStart(2, "0");
-    const monthKey = "YYYY-" + month;
-    const dateKey  = "YYYY-" + month + "-" + date;
-
+    const toDateString = function(date) {
+        return [
+            tomorrow.getFullYear(),
+            String(tomorrow.getMonth() + 1).padStart(2, "0"),
+            String(tomorrow.getDate()).padStart(2, "0"),
+        ].join("-");
+    }
     const map = {
         "YYYY-01"    : "https://www.irasutoya.com/2014/08/112.html",
         "YYYY-02"    : "https://www.irasutoya.com/2014/08/112.html",
@@ -36,7 +37,18 @@
         // クリスマス
         "YYYY-12-25" : "https://www.irasutoya.com/2014/12/blog-post_55.html",
     };
-    location.href = map[dateKey] || map[monthKey];
+
+    const tomorrow = new Date(Date.now() + 1 * 1000 * 60 * 60 * 24);
+    const targetDateString = prompt("", toDateString(tomorrow));
+
+    if (targetDateString) {
+        const targetDate = new Date(targetDateString);
+        const month = String(targetDate.getMonth() + 1).padStart(2, "0");
+        const date = String(targetDate.getDate()).padStart(2, "0");
+        const monthKey = "YYYY-" + month;
+        const dateKey = "YYYY-" + month + "-" + date;
+        location.href = map[dateKey] || map[monthKey];
+    }
 })()
 </script>
 
