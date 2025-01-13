@@ -1,0 +1,1 @@
+data:text/html, <script>!function(){const t=prompt();if(t){const n="https://www.kanjipedia.jp/search/",o="k="+encodeURIComponent(t.at(0))+"&kt=1&wt=1&ky=1&wy=1&sk=partial&t=kanji";location.href=n+"?"+o}}()</script>

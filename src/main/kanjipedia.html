@@ -1,0 +1,18 @@
+<!--
+  -
+  - 漢字ペディアで検索する.
+  -
+  -->
+
+<script>
+(function() {
+    const text = prompt();
+    if (text) {
+        const keyword = encodeURIComponent(text.at(0));
+        const url = "https://www.kanjipedia.jp/search/";
+        const query_string = "k=" + keyword + "&kt=1&wt=1&ky=1&wy=1&sk=partial&t=kanji";
+        location.href = url + "?" + query_string;
+    }
+})()
+</script>
+
