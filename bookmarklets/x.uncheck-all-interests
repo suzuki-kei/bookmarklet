@@ -1,0 +1,1 @@
+javascript:(()=>{var t="https://x.com/settings/your_twitter_data/twitter_interests";window.location.href===t?document.querySelectorAll("input[type='checkbox'][checked]").forEach(t=>t.click()):alert(`Not a target URL: target_url=${t}`)})();
